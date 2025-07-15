@@ -13,7 +13,7 @@
     "start:test": "RAILS_ENV=test foreman start -f ./Procfile.test",
     "dev": "overmind start -f ./Procfile.dev",
     "ruby:prettier": "bundle exec rubocop -a",
-    "build:sdk": "BUILD_MODE=library yarn vite build",
+    "build:sdk": "BUILD_MODE=library pnpm vite build",
     "prepare": "husky install",
     "size": "size-limit",
     "story:dev": "histoire dev",
@@ -160,5 +160,5 @@
       "scss-lint"
     ]
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "pnpm@8.x.x"
 }
